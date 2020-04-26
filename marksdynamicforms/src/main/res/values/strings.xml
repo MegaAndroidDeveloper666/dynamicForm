@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="builder_icons">
+        <item>@drawable/icon_coin</item>
+        <item>@drawable/icon_hole</item>
+        <item>@drawable/icon_diagram</item>
+        <item>@drawable/icon_modern</item>
+    </integer-array>
+
+    <string-array name="builder_titles">
+        <item>Чистая прибыль</item>
+        <item>Эффективность и рентабельность</item>
+        <item>Устойчивое развитие</item>
+        <item>Модернизация продукта</item>
+    </string-array>
+
+    <string-array name="builder_descriptions">
+        <item>Стратегические объекты позволяют обеспечить стабильные денежные потоки в долгосрочной перспективе</item>
+        <item>Повышать эффективность и рентабельность за счет реализации точечных высоко-маржинальных проектов</item>
+        <item>Развивать девелоперскую деятельность в наиболее привлекательных и быстрорастущих регионах России</item>
+        <item>Модернизация Качественный конкурентный продукт, отвечающий запросам потребителя, индивидуально для каждого проекта</item>
+    </string-array>
+
+</resources>

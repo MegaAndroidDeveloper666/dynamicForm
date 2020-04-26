@@ -1,0 +1,3 @@
+rootProject.name='MarksDynamicForms'
+include ':app'
+include ':marksdynamicforms'

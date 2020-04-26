@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="defaultPadding">16dp</dimen>
+    <dimen name="defaultTextSize">16sp</dimen>
+    <dimen name="defaultTitleSize">20sp</dimen>
+    <dimen name="defaultSmallTextSize">14sp</dimen>
+
+</resources>

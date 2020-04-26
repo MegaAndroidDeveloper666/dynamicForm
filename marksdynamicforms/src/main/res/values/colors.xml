@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="defaultText">#000</color>
+    <color name="defaultHint">#888</color>
+    <color name="defaultColorAccent">#be0</color>
+    <color name="defaultButtonText">#fff</color>
+    <color name="defaultButtonTextStroke">@color/defaultColorAccent</color>
+    <color name="defaultColorAccentDark">#9b0</color>
+    <color name="defaultColorAccentDisabled">#9be0</color>
+    <color name="transparent">#0000</color>
+
+</resources>
