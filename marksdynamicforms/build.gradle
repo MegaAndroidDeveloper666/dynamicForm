@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -46,5 +47,10 @@ dependencies {
     implementation 'com.github.bumptech.glide:okhttp3-integration:4.8.0@aar'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'org.apache.commons:commons-lang3:3.7'
+    kapt "com.android.databinding:compiler:3.6.3"
 
+}
+
+kapt {
+    generateStubs = true
 }
