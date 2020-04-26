@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="@dimen/smallPadding"
     android:orientation="vertical">
 
     <androidx.viewpager.widget.ViewPager
@@ -18,11 +17,6 @@
         android:id="@+id/ciViewPager"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
-        app:ci_height="@dimen/smallPadding"
-        app:ci_width="@dimen/smallPadding"
-        app:ci_drawable="@drawable/ci_selected"
-        app:ci_drawable_unselected="@drawable/ci_unselected"
-        app:ci_animator="@animator/ci_animator"
         />
 
 </LinearLayout>

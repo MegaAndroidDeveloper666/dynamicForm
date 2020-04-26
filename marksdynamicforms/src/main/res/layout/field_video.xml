@@ -2,8 +2,6 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="180dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginLeft="@dimen/padding"
-    android:layout_marginRight="@dimen/padding"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
@@ -12,7 +10,6 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:adjustViewBounds="true"
-        android:src="@drawable/start_video"
         android:textAlignment="center" />
 
     <View

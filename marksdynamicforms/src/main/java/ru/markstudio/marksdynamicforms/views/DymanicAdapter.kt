@@ -11,14 +11,15 @@ import ru.mysmartflat.kortros.view.customViews.dynamic.BaseViewHolder
 import java.lang.Exception
 
 class DynamicAdapter(
-    private val dataEntryList: List<Field>
+    private val dataEntryList: List<Field>,
+    private val settings: Settings
 ) : RecyclerView.Adapter<BaseViewHolder>() {
 
     private var values = Array(dataEntryList.size) { "" }
     private var validValues = Array(dataEntryList.size) { false }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
-        return FieldInputType.getViewHolder(viewType, parent)
+        return FieldInputType.getViewHolder(viewType, parent, settings)
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
@@ -57,7 +58,7 @@ class DynamicAdapter(
 
     companion object {
         @JvmStatic
-        fun parseHashMap(fieldsList: ArrayList<HashMap<String, Any>>): DynamicAdapter {
+        fun parseHashMap(fieldsList: ArrayList<HashMap<String, Any>>, settings: Settings): DynamicAdapter {
             val dataEntryList = ArrayList<Field>()
             fieldsList.map {
                 var map: Map<String, Any> = HashMap()
@@ -228,7 +229,7 @@ class DynamicAdapter(
                 }
                 dataEntryList.add(field)
             }
-            return DynamicAdapter(dataEntryList)
+            return DynamicAdapter(dataEntryList, settings)
         }
     }
 }

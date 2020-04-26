@@ -4,10 +4,6 @@
     android:id="@+id/editLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fontFamily="@font/medium"
     android:textSize="14sp"
-    android:textColor="@color/brandTextSecondary"
     android:autoLink="all"
-    android:layout_marginStart="@dimen/padding"
-    android:layout_marginEnd="@dimen/padding"
     tools:text="Проверочка" />

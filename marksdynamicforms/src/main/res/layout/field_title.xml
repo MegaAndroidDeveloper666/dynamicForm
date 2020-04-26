@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/editLayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fontFamily="@font/medium"
-    android:textSize="20sp"
-    android:layout_marginStart="@dimen/padding"
-    android:layout_marginEnd="@dimen/padding"
-    android:textColor="@color/brandTextPrimary"
-    tools:text="Проверочка" />
+<!--<layout>-->
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="settings"-->
+<!--            type="ru.markstudio.marksdynamicforms.views.Settings" />-->
+<!--    </data>-->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/editLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:text="Проверочка" />
+<!--</layout>-->
+
+
+<!--    android:layout_marginStart="@{settings.viewPadding}"-->
+<!--    android:layout_marginEnd="@{settings.viewPadding}"-->
+<!--    android:textColor="@{settings.primaryTextColor}"-->
+<!--    android:fontFamily="@{settings.typeface}"-->

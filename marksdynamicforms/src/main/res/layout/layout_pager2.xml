@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
 
-    <data>
-        <variable
-            name="settings"
-            type="ru.markstudio.marksdynamicforms.views.Settings" />
-    </data>
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="settings"-->
+<!--            type="ru.markstudio.marksdynamicforms.views.Settings" />-->
+<!--    </data>-->
 
     <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -42,17 +45,17 @@
                     android:id="@+id/textView_pager_header_ID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@{settings.typeface}"
                     android:textStyle="bold"
-                    android:textColor="@{settings.primaryTextColor}"
                     android:textSize="15sp"
                     tools:text="Эффективность и рентабельность" />
+<!--                android:fontFamily="@{settings.typeface}"-->
+<!--                android:textColor="@{settings.primaryTextColor}"-->
 
                 <TextView
                     android:id="@+id/textView_pager_ID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@{settings.typeface}"
+
                     android:textSize="13sp"
                     tools:text="Эффективность и рентабельность
                             Эффективность и рентабельность
@@ -60,10 +63,11 @@
                             Эффективность и рентабельность
                             Эффективность и рентабельность
                             Эффективность и рентабельность" />
+<!--                android:fontFamily="@{settings.typeface}"-->
 
             </LinearLayout>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-</layout>
+<!--</layout>-->

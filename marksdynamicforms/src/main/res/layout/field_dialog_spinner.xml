@@ -9,9 +9,6 @@
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/smallPadding"
-        android:fontFamily="@font/regular"
-        android:textColor="@color/dialog_text_color"
         tools:text="Выберите значение" />
 
     <Spinner
@@ -20,10 +17,7 @@
         android:layout_height="40dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/filter_container_background"
         android:textColor="@android:color/darker_gray"
-        android:dropDownSelector="@color/colorAccent"
-        android:fontFamily="@font/regular"
         android:textSize="15sp" />
 
 </LinearLayout>

@@ -3,12 +3,7 @@
     android:id="@+id/radioButton"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fontFamily="@font/regular"
     android:textSize="16sp"
-    android:textColor="@color/brandTextPrimary"
-    android:layout_marginStart="@dimen/padding"
-    android:layout_marginEnd="@dimen/padding"
     android:ellipsize="end"
     android:layout_marginTop="-10dp"
-    android:layout_marginBottom="-10dp"
-    style="@style/RadioButton"/>
+    android:layout_marginBottom="-10dp"/>

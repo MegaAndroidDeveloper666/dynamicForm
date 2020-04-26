@@ -22,13 +22,13 @@ data class Settings(
     var smallTextSize: Int
 
     init {
-        primaryTextColor = ContextCompat.getColor(context, R.color.defaultText)
-        colorAccent = ContextCompat.getColor(context, R.color.defaultColorAccent)
-        colorButtonText = ContextCompat.getColor(context, R.color.defaultButtonText)
-        colorButtonTextStroke = ContextCompat.getColor(context, R.color.defaultButtonTextStroke)
-        colorAccentDark = ContextCompat.getColor(context, R.color.defaultColorAccentDark)
-        colorAccentDisabled = ContextCompat.getColor(context, R.color.defaultColorAccentDisabled)
-        primaryHintColor = ContextCompat.getColor(context, R.color.defaultHint)
+        primaryTextColor = R.color.defaultText
+        colorAccent = R.color.defaultColorAccent
+        colorButtonText = R.color.defaultButtonText
+        colorButtonTextStroke = R.color.defaultButtonTextStroke
+        colorAccentDark = R.color.defaultColorAccentDark
+        colorAccentDisabled = R.color.defaultColorAccentDisabled
+        primaryHintColor = R.color.defaultHint
         viewPadding = context.resources.getDimension(R.dimen.defaultPadding).toInt()
         typeface = Typeface.DEFAULT
         textSize = context.resources.getDimension(R.dimen.defaultTextSize).toInt()

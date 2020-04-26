@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+        <import type="androidx.core.content.ContextCompat"/>
         <variable
             name="settings"
             type="ru.markstudio.marksdynamicforms.views.Settings" />
@@ -15,11 +16,10 @@
             android:id="@+id/editLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enterName"
             android:paddingStart="@{settings.viewPadding}"
             android:paddingEnd="@{settings.viewPadding}"
-            android:textColor="@{settings.primaryTextColor}"
-            android:textColorHint="@{settings.primaryHintColor}"
+            android:textColor="@{ContextCompat.getColor(context, settings.primaryTextColor)}"
+            android:textColorHint="@{ContextCompat.getColor(context, settings.primaryHintColor)}"
             android:fontFamily="@{settings.typeface}"
             android:textSize="@{settings.textSize}"
             >
@@ -30,8 +30,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:fontFamily="@{settings.typeface}"
-                android:textColor="@{settings.primaryTextColor}"
-                android:textColorHint="@{settings.primaryHintColor}"
+                android:textColor="@{ContextCompat.getColor(context, settings.primaryTextColor)}"
+                android:textColorHint="@{ContextCompat.getColor(context, settings.primaryHintColor)}"
                 android:textSize="@{settings.textSize}"
                 />
 

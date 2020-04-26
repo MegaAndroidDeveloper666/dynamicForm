@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,16 +27,19 @@ class DynamicFragment: Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_dynamic, container, false)
         val view = binding.root
-        binding.setVariable(BR.settings, settings)
+//        binding.setVariable(BR.settings, settings)
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        rvDynamic.apply {
+        binding.rvDynamic.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            adapter = DynamicAdapter(fields)
+            adapter = DynamicAdapter(fields, settings)
         }
+//        TextView(context).apply {
+//            setHintTextColor(resources.)
+//        }
     }
 
     companion object {
